@@ -10,8 +10,6 @@ updates:
     labels:
       - "dependencies"
     assignees:
-      - "Hackmastr"
-      - "rumblefrog"
       - "Rushaway"
     commit-message:
       prefix: "Composer"
