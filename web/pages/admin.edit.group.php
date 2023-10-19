@@ -2,7 +2,7 @@
 /*************************************************************************
 This file is part of SourceBans++
 
-SourceBans++ (c) 2014-2019 by SourceBans++ Dev Team
+SourceBans++ (c) 2014-2023 by SourceBans++ Dev Team
 
 The SourceBans++ Web panel is licensed under a
 Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.
@@ -49,7 +49,7 @@ $_GET['id'] = (int) $_GET['id'];
 $web_group = $GLOBALS['db']->GetRow("SELECT flags, name FROM " . DB_PREFIX . "_groups WHERE gid = {$_GET['id']}");
 $srv_group = $GLOBALS['db']->GetRow("SELECT flags, name, immunity FROM " . DB_PREFIX . "_srvgroups WHERE id = {$_GET['id']}");
 
-$web_flags = intval($web_group[0]);
+$web_flags = intval($web_group[0] ?? null);
 $srv_flags = isset($srv_group[0]) ? $srv_group[0] : '';
 
 $name = $userbank->GetProperty("user", $_GET['id'])?>

@@ -2,7 +2,7 @@
 /*************************************************************************
 This file is part of SourceBans++
 
-SourceBans++ (c) 2014-2019 by SourceBans++ Dev Team
+SourceBans++ (c) 2014-2023 by SourceBans++ Dev Team
 
 The SourceBans++ Web panel is licensed under a
 Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.
@@ -461,7 +461,7 @@ while (!$res->EOF) {
 
     if (!empty($res->fields['ban_ip']) && !Config::getBool('banlist.nocountryfetch')) {
         if (!empty($res->fields['ban_country']) && $res->fields['ban_country'] != ' ') {
-            $data['country'] = '<img src="images/country/' . strtolower($res->fields['ban_country']) . '.jpg" alt="' . $res->fields['ban_country'] . '" border="0" align="absmiddle" />';
+            $data['country'] = '<img src="images/country/' . strtolower($res->fields['ban_country']) . '.png" alt="' . $res->fields['ban_country'] . '" border="0" align="absmiddle" />';
         } elseif (!Config::getBool('banlist.nocountryfetch')) {
             $country = FetchIp($res->fields['ban_ip']);
             $edit    = $GLOBALS['db']->Execute("UPDATE " . DB_PREFIX . "_bans SET country = ?
@@ -471,12 +471,12 @@ while (!$res->EOF) {
             ));
 
             $countryFlag = empty($country) ? 'zz' : strtolower($country);
-            $data['country'] = '<img src="images/country/' . $countryFlag . '.jpg" alt="' . $country . '" border="0" align="absmiddle" />';
+            $data['country'] = '<img src="images/country/' . $countryFlag . '.png" alt="' . $country . '" border="0" align="absmiddle" />';
         } else {
-            $data['country'] = '<img src="images/country/zz.jpg" alt="Unknown Country" border="0" align="absmiddle" />';
+            $data['country'] = '<img src="images/country/zz.png" alt="Unknown Country" border="0" align="absmiddle" />';
         }
     } else {
-        $data['country'] = '<img src="images/country/zz.jpg" alt="Unknown Country" border="0" align="absmiddle" />';
+        $data['country'] = '<img src="images/country/zz.png" alt="Unknown Country" border="0" align="absmiddle" />';
     }
 
     $data['ban_date']    = Config::time($res->fields['ban_created']);
@@ -570,7 +570,7 @@ while (!$res->EOF) {
     $data['mod_icon'] = '<img src="images/games/' . $modicon . '" alt="MOD" border="0" align="absmiddle" />&nbsp;' . $data['country'];
 
     if ($res->fields['history_count'] > 1) {
-        $data['prevoff_link'] = $res->fields['history_count'] . " " . CreateLinkR("(search)", "index.php?p=banlist&searchText=" . ($data['type'] == 0 ? $data['steamid'] : $res->fields['ban_ip']) . "&Submit");
+        $data['prevoff_link'] = $res->fields['history_count'] . " " . CreateLinkR("&nbsp;(search)", "index.php?p=banlist&searchText=" . ($data['type'] == 0 ? $data['steamid'] : $res->fields['ban_ip']) . "&Submit");
     } else {
         $data['prevoff_link'] = "No previous bans";
     }

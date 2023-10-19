@@ -1,7 +1,7 @@
 ﻿// *************************************************************************
 //  This file is part of SourceBans++.
 //
-//  Copyright (C) 2014-2019 SourceBans++ Dev Team <https://github.com/sbpp>
+//  Copyright (C) 2014-2023 SourceBans++ Dev Team <https://github.com/sbpp>
 //
 //  SourceBans++ is free software: you can redistribute it and/or modify
 //  it under the terms of the GNU General Public License as published by
@@ -32,7 +32,7 @@
 public SharedPlugin __pl_sourcebanschecker =
 {
 	name = "sourcebans++",
-	file = "sbpp_main.smx",
+	file = "sbpp_checker.smx",
 	#if defined REQUIRE_PLUGIN
 	required = 1
 	#else

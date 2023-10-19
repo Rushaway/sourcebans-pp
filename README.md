@@ -4,7 +4,7 @@
     SourceBans++
 </h1>
 
-### [![GitHub release](https://img.shields.io/github/release/sbpp/sourcebans-pp.svg?style=flat-square&logo=github&logoColor=white)](https://github.com/sbpp/sourcebans-pp/releases) [![GitHub license](https://img.shields.io/github/license/sbpp/sourcebans-pp?color=blue&style=flat-square)](https://github.com/sbpp/sourcebans-pp/blob/v1.x/LICENSE) [![GitHub issues](https://img.shields.io/github/issues/sbpp/sourcebans-pp.svg?style=flat-square&logo=github&logoColor=white)](https://github.com/sbpp/sourcebans-pp/issues) [![GitHub pull requests](https://img.shields.io/github/issues-pr/sbpp/sourcebans-pp.svg?style=flat-square&logo=github&logoColor=white)](https://github.com/sbpp/sourcebans-pp/pulls) [![GitHub All Releases](https://img.shields.io/github/downloads/sbpp/sourcebans-pp/total.svg?style=flat-square&logo=github&logoColor=white)](https://github.com/sbpp/sourcebans-pp/releases) [![Travis](https://img.shields.io/travis/sbpp/sourcebans-pp.svg?style=flat-square&logo=travis)](https://travis-ci.org/sbpp/sourcebans-pp) [![AppVeyor](https://img.shields.io/appveyor/ci/Sarabveer/sourcebans-pp.svg?style=flat-square&logo=appveyor)](https://ci.appveyor.com/project/Sarabveer/sourcebans-pp) [![Codacy](https://img.shields.io/codacy/grade/1fc9e40bde8e40dca8680e4b2d51256b.svg?style=flat-square)](https://www.codacy.com/app/sbpp/sourcebans-pp) [![Discord](https://img.shields.io/discord/298914017135689728.svg?style=flat-square&logo=discord&label=discord)](https://discord.gg/4Bhj6NU)
+### [![GitHub release](https://img.shields.io/github/release/sbpp/sourcebans-pp.svg?style=flat-square&logo=github&logoColor=white)](https://github.com/sbpp/sourcebans-pp/releases) [![License: CC BY-SA 4.0](https://img.shields.io/badge/License-CC_BY--SA_4.0-blue.svg)](https://github.com/sbpp/sourcebans-pp/blob/php81/LICENSE.md) [![GitHub issues](https://img.shields.io/github/issues/sbpp/sourcebans-pp.svg?style=flat-square&logo=github&logoColor=white)](https://github.com/sbpp/sourcebans-pp/issues) [![GitHub pull requests](https://img.shields.io/github/issues-pr/sbpp/sourcebans-pp.svg?style=flat-square&logo=github&logoColor=white)](https://github.com/sbpp/sourcebans-pp/pulls) [![GitHub All Releases](https://img.shields.io/github/downloads/sbpp/sourcebans-pp/total.svg?style=flat-square&logo=github&logoColor=white)](https://github.com/sbpp/sourcebans-pp/releases) [![Discord](https://img.shields.io/discord/298914017135689728.svg?style=flat-square&logo=discord&label=discord)](https://discord.gg/4Bhj6NU)
 
 
 Global admin, ban, and communication management system for the Source engine
@@ -40,7 +40,7 @@ or read how to report issues effectively [here](https://coenjacobs.me/2013/12/06
 The easiest way of installing SourceBans++ is to use a [release version](https://github.com/sbpp/sourcebans-pp/releases), since 
 those come bundled with all requiered code dependencies and pre-compiled sourcemod plugins.
 
-The [quickstart](https://sbpp.dev/docs/quickstart/) guide gives you a detailed walktrough of the installation process.
+The [quickstart](https://sbpp.github.io/docs/quickstart/) guide gives you a detailed walktrough of the installation process.
 
 ## How to install the current master branch version
 
@@ -48,12 +48,12 @@ The master branch doesn't include the required dependencies or compiled plugins 
 Here is a quick summary of getting the master branch code up and running.
 
 ### Installing webpanel dependencies
-- Follow the [quickstart](https://sbpp.dev/docs/quickstart/) guide and upload the webpanel files to your web server
+- Follow the [quickstart](https://sbpp.github.io/docs/quickstart/) guide and upload the webpanel files to your web server
 - Install [composer](https://getcomposer.org/) - [Installation Guide](https://getcomposer.org/doc/00-intro.md#installation-linux-unix-macos)
 - Go to the root of your SourceBans++ installation (where index.php is located)
 - run ```composer install```
 
-After successfully installing all dependencies you can procede with the [quickstart](https://sbpp.dev/docs/quickstart/) guide.
+After successfully installing all dependencies you can procede with the [quickstart](https://sbpp.github.io/docs/quickstart/) guide.
 
 ### PHP 8.1 major changes
 ## Upgrade

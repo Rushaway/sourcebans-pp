@@ -1,0 +1,32 @@
+name: CI
+
+on: [push, pull_request]
+
+jobs:
+  build:
+    name: "Build"
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-20.04]
+        include:
+          - os: ubuntu-20.04
+    steps:
+      - uses: actions/checkout@v3
+      - name: Build sourcemod plugin
+        uses: maxime1907/action-sourceknight@v1
+        with:
+          cmd: build
+
+      - name: Create package
+        run: |
+          mkdir -p /tmp/package
+          cp -R .sourceknight/package/* /tmp/package
+          cp -R game/addons/sourcemod/configs /tmp/package/common/addons/sourcemod/
+          cp -R game/addons/sourcemod/translations /tmp/package/common/addons/sourcemod/
+      - name: Upload build archive for test runners
+        uses: actions/upload-artifact@v3
+        with:
+          name: ${{ runner.os }}
+          path: /tmp/package
