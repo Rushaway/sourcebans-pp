@@ -10,7 +10,10 @@ Legend:
 ? = Other stuff
 ```
 
-(16/09/24): Version 1.8.1 (Contain security release - **Run updater required**)
+> [!IMPORTANT]
+> This is a security release and we recommend to upgrade as soon as possible.
+
+(16/09/24): Version 1.8.1 (**Run updater required**)
 -----------------------
 ```
 01. ! XAJAX API 'Plogin' Vulnerable to Brute Force Attacks #990
