@@ -35,7 +35,7 @@
 #define INVALID_TARGET -1
 #define Prefix "\x04[SourceBans++]\x01 "
 
-bool g_bPrintCheckOnConnect = false;
+bool g_bPrintCheckOnConnect = true;
 char g_DatabasePrefix[10] = "sb";
 SMCParser g_ConfigParser;
 Database g_DB;
@@ -592,9 +592,9 @@ public SMCResult ReadConfig_KeyValue(SMCParser smc, const char[] key, const char
 
 	if (strcmp("PrintCheckOnConnect", key, false) == 0)
 	{
-		if (strcmp("1", value, false) == 0)
+		if (strcmp("0", value, false) == 0)
 		{
-			g_bPrintCheckOnConnect = true;
+			g_bPrintCheckOnConnect = false;
 		}
 	}
 
