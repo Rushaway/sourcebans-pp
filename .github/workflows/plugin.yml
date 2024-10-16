@@ -45,7 +45,7 @@ jobs:
       - name: Upload build archive for test runners
         uses: actions/upload-artifact@v4
         with:
-          name: ${{ runner.os }}
+          name: package
           path: /tmp/package
 
   tag:
@@ -56,14 +56,16 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - uses: dev-drprasad/delete-tag-and-release@v1.1
+      - name: Delete existing 'latest' tag and release (Legacy tag)
+        uses: dev-drprasad/delete-tag-and-release@v1.1
         with:
           delete_release: true
           tag_name: latest
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - uses: dev-drprasad/delete-tag-and-release@v1.1
+      - name: Delete existing 'Plugins-Latest' tag and release (Current tag)
+        uses: dev-drprasad/delete-tag-and-release@v1.1
         with:
           delete_release: true
           tag_name: Plugins-Latest
@@ -95,8 +97,8 @@ jobs:
       - name: Package
         run: |
           ls -Rall
-          if [ -d "./Linux/" ]; then
-            cd ./Linux/
+          if [ -d "./package/" ]; then
+            cd ./package/
             tar -czf ../${{ github.event.repository.name }}-${{ env.RELEASE_VERSION }}.tar.gz -T <(\ls -1)
             cd -
           fi
