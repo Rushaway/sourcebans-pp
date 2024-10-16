@@ -66,13 +66,13 @@ jobs:
       - uses: dev-drprasad/delete-tag-and-release@v1.1
         with:
           delete_release: true
-          tag_name: Game - Plugins (Latest)
+          tag_name: Plugins-Latest
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - uses: rickstaa/action-create-tag@v1
         with:
-          tag: "Game - Plugins (Latest)"
+          tag: "Plugins-Latest"
           github_token: ${{ secrets.GITHUB_TOKEN }}
 
   release:
@@ -86,7 +86,7 @@ jobs:
 
       - name: Versioning
         run: |
-          version="Game - Plugins (Latest)"
+          version="Plugins-Latest"
           if [[ "${{ github.ref_type }}" == 'tag' ]]; then
             version=`echo $GITHUB_REF | sed "s/refs\/tags\///"`;
           fi
