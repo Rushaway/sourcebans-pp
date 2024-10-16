@@ -8,11 +8,15 @@ on:
       - php81
     tags:
       - '*'
+    paths:
+      - 'game/**'
   pull_request:
     branches:
       - main
       - master
       - php81
+    paths:
+      - 'game/**'
 
 jobs:
   build:
@@ -48,27 +52,25 @@ jobs:
     name: Tag
     needs: build
     runs-on: ubuntu-latest
+    if: github.event_name == 'push' && (github.ref == 'refs/heads/master' || github.ref == 'refs/heads/main' || github.ref == 'refs/heads/php81')
     steps:
       - uses: actions/checkout@v4
-        if: github.ref == 'refs/heads/master' || github.ref == 'refs/heads/main' || github.ref == 'refs/heads/php81'
 
       - uses: dev-drprasad/delete-tag-and-release@v1.1
-        if: github.ref == 'refs/heads/master' || github.ref == 'refs/heads/main' || github.ref == 'refs/heads/php81'
         with:
           delete_release: true
-          tag_name: latest
+          tag_name: latest, Game - Plugins (Latest)
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - uses: rickstaa/action-create-tag@v1
-        if: github.ref == 'refs/heads/master' || github.ref == 'refs/heads/main' || github.ref == 'refs/heads/php81'
         with:
-          tag: "latest"
+          tag: "Game - Plugins (Latest)"
           github_token: ${{ secrets.GITHUB_TOKEN }}
 
   release:
     name: Release
-    if: startsWith(github.ref, 'refs/tags/') || github.ref == 'refs/heads/master' || github.ref == 'refs/heads/main' || github.ref == 'refs/heads/php81'
+    if: (github.event_name == 'push' && (startsWith(github.ref, 'refs/tags/') || github.ref == 'refs/heads/master' || github.ref == 'refs/heads/main' || github.ref == 'refs/heads/php81'))
     needs: [build, tag]
     runs-on: ubuntu-latest
     steps:
@@ -77,7 +79,7 @@ jobs:
 
       - name: Versioning
         run: |
-          version="latest"
+          version="Game - Plugins (Latest)"
           if [[ "${{ github.ref_type }}" == 'tag' ]]; then
             version=`echo $GITHUB_REF | sed "s/refs\/tags\///"`;
           fi
