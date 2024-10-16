@@ -54,7 +54,8 @@ jobs:
     runs-on: ubuntu-latest
     if: github.event_name == 'push' && (github.ref == 'refs/heads/master' || github.ref == 'refs/heads/main' || github.ref == 'refs/heads/php81')
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout
+        uses: actions/checkout@v4
 
       - name: Delete existing 'latest' tag and release (Legacy tag)
         uses: dev-drprasad/delete-tag-and-release@v1.1
@@ -72,7 +73,8 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - uses: rickstaa/action-create-tag@v1
+      - name: Create tag
+        uses: rickstaa/action-create-tag@v1
         with:
           tag: "Plugins-Latest"
           github_token: ${{ secrets.GITHUB_TOKEN }}
