@@ -3,7 +3,7 @@
 	"Ban Warning"
 	{
 		"#format"		"{1:N},{2:d},{3:s}"
-		"en"			"Warning: \"{1:N}\" has {2} previous ban{3}."
+		"en"			"Warning: \"{1:N}\" has {2} previous ban{3}.."
 		"ru"			"Внимание: \"{1:N}\" ранее был забанен {2} раз{3}."
 		"hu"			"Figyelem: \"{1:N}\" van {2} korábbi kitiltása{3}."
 		"chi"			"警告: \"{1:N}\" 之前有 {2} 次封禁{3}."
