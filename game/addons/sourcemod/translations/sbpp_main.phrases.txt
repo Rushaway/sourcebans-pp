@@ -3,7 +3,7 @@
 	"Banned Check Site"
 	{
 		"#format"		"{1:s}"
-		"en"			"You have been banned from this server. Access {1} for more info.."
+		"en"			"You have been banned from this server. Access {1} for more info."
 		"nl"			"U bent gebanned van deze server, kijk op {1} voor meer informatie."
 		"fr"			"Vous avez été banni de ce serveur, allez sur {1} pour plus d'informations."
 		"pl"			"Zostałeś zbanowany na tym serwerze, odwiedź {1} aby poznać szczegóły."
