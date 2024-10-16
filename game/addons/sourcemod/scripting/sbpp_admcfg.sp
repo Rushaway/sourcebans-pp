@@ -22,7 +22,7 @@
 //   Licensed under GNU GPL version 3
 //   Page: <http://www.sourcemod.net/>
 //
-// *************************************************************************
+// **************************************************************************
 
 #pragma semicolon 1
 #pragma newdecls required
