@@ -765,8 +765,7 @@ function process_edit_server()
 	document.forms.editserver.submit();
 }
 
-const handleSteamIDSearch = async (steamInput, searchType, searchPath) =>
-{
+const handleSteamIDSearch = async (steamInput, searchType, searchPath) => {
 	try {
 		const response = await fetch('includes/SteamID/Force_Steam2.php',
 		{
@@ -779,15 +778,12 @@ const handleSteamIDSearch = async (steamInput, searchType, searchPath) =>
 			})
 		});
 
-		// Can not fetch the SteamID conversion script - continue with the search
 		if (!response.ok)
 		{
 			window.location = `index.php?${searchPath}&advSearch=${steamInput}&advType=${searchType}`;
 			return;
 		}
-
 		const data = await response.json();
-
 		if (data.success)
 		{
 			const input = data.steam2id;
@@ -798,6 +794,9 @@ const handleSteamIDSearch = async (steamInput, searchType, searchPath) =>
 			// Conversion failed - continue with the search
 			window.location = `index.php?${searchPath}&advSearch=${steamInput}&advType=${searchType}`;
 		}
+	} catch (error) {
+		// Error while fetching the SteamID conversion script - continue with the search
+		window.location = `index.php?${searchPath}&advSearch=${steamInput}&advType=${searchType}`;
 	}
 };
 
