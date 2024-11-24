@@ -15,17 +15,15 @@ Legend:
 > [!IMPORTANT]
 > Deprecated PHP version under 8.2
 ```
-
 01. ? Enforce PHP 8.2 as minimum version
 02. ! Replace undefined variable with trim function in name cleaning
 03. ? Bump Font Awesome to 6.7.0
 
 (10/11/24): Version 1.8.1 (**Run updater required**)
 -----------------------
-> [!IMPORTANT]
+> [!WARNING]
 > This is a security release and we recommend to upgrade as soon as possible.
 ```
-
 01. ! XAJAX API 'Plogin' Vulnerable to Brute Force Attacks
 02. ! XAJAX API 'Plogin' can bypass disabled 'Enable Normal Login'
 03. ! Vulnerability in Forgot Password implementation
