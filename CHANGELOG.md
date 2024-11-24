@@ -19,6 +19,7 @@ Legend:
 02. ! Replace undefined variable with trim function in name cleaning
 03. ? Bump Font Awesome to 6.7.0
 
+
 (10/11/24): Version 1.8.1 (**Run updater required**)
 -----------------------
 > [!IMPORTANT]

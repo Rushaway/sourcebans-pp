@@ -55,7 +55,7 @@ Here is a quick summary of getting the master branch code up and running.
 
 After successfully installing all dependencies you can procede with the [quickstart](https://sbpp.github.io/docs/quickstart/) guide.
 
-### PHP 8.1 major changes
+### PHP 8.2 major changes
 ## Upgrade
 *If you ran the installer, this step is unnecessary.*
 
