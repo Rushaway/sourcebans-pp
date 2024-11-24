@@ -9,7 +9,7 @@ define('INCLUDES_PATH', ROOT . 'includes');
 define('IN_SB', true);
 define('IN_INSTALL', true);
 
-define('SB_VERSION', '1.8.0 | Installer');
+define('SB_VERSION', '1.8.2 | Installer');
 
 // ---------------------------------------------------
 //  Setup PHP

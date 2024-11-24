@@ -1,7 +1,7 @@
 {
     "name": "sbpp/sourcebans-pp",
     "description": "Admin, ban, and comms management system for the Source engine.",
-    "version": "1.7.0",
+    "version": "1.8.2",
     "type": "project",
     "keywords": [],
     "homepage": "https://sbpp.github.io",
@@ -27,7 +27,7 @@
         "symfony/mailer": "^6.0",
         "ext-pdo": "*",
         "ext-openssl": "*",
-        "php": ">=8.1"
+        "php": ">=8.2"
     },
 
     "autoload": {

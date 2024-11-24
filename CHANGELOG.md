@@ -10,6 +10,15 @@ Legend:
 ? = Other stuff
 ```
 
+(24/11/24): Version 1.8.2
+-----------------------
+> [!IMPORTANT]
+> Deprecated PHP version under 8.2
+```
+01. ? Enforce PHP 8.2 as minimum version
+02. ! Replace undefined variable with trim function in name cleaning
+03. ? Bump Font Awesome to 6.7.0
+
 (10/11/24): Version 1.8.1 (**Run updater required**)
 -----------------------
 > [!IMPORTANT]

@@ -29,7 +29,7 @@ define('theme_name', "SourceBans++ Default Theme");
 define('theme_author', "IceMan, SourceBans++ Dev Team");
 
 // Set the version of the theme here
-define('theme_version', "1.8.0-dev");
+define('theme_version', "1.8.2-dev");
 
 // Set the link of the theme here
 define('theme_link', "https://github.com/sbpp/sourcebans-pp");
