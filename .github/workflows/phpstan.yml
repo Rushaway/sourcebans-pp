@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+      - php81
     paths:
       - 'web/**'
       - '.github/workflows/phpstan.yml'
