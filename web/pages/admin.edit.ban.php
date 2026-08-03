@@ -209,6 +209,11 @@ if (isset($_POST['name'])) {
     PruneBans();
 
     if ($error == 0) {
+        // Re-read from POST so PHPStan does not carry the narrowed type
+        // inferred by the validation branches above into this independent
+        // duplicate-check block. The value is identical at runtime.
+        $postBanType = BanType::tryFrom((int) $_POST['type']) ?? BanType::Steam;
+
         // Check if the new steamid is already banned. Surface the
         // conflicting bid so the admin can investigate the OTHER
         // active row that's blocking this edit (mirrors the same
