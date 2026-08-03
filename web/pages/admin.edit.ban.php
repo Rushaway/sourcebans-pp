@@ -190,13 +190,15 @@ if (isset($_POST['name'])) {
         $_POST['steam'] = \SteamID\SteamID::toSteam2($rawSteam);
     }
 
-    if ($error === 0 && empty($_POST['ip']) && $postBanType === BanType::Ip) {
-        // Didn't type an IP
-        $error++;
-        $validationErrors['ip'] = 'You must type an IP';
-    } elseif ($error === 0 && $postBanType === BanType::Ip && !filter_var($_POST['ip'], FILTER_VALIDATE_IP)) {
-        $error++;
-        $validationErrors['ip'] = 'You must type a valid IP';
+    if ($postBanType === BanType::Ip) {
+        if ($error === 0 && empty($_POST['ip'])) {
+            // Didn't type an IP
+            $error++;
+            $validationErrors['ip'] = 'You must type an IP';
+        } elseif ($error === 0 && !filter_var($_POST['ip'], FILTER_VALIDATE_IP)) {
+            $error++;
+            $validationErrors['ip'] = 'You must type a valid IP';
+        }
     }
 
     // Didn't type a custom reason
