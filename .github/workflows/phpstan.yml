@@ -103,4 +103,4 @@ jobs:
           # Refuse to run if the bootstrap can't connect — otherwise a creds
           # mismatch would silently disable phpstan-dba and CI would stay green.
           DBA_REQUIRE: '1'
-        run: includes/vendor/bin/phpstan analyse --configuration=phpstan.neon --no-progress --error-format=github --memory-limit=1G
+        run: includes/vendor/bin/phpstan analyse --configuration=phpstan.neon --no-progress --error-format=table --memory-limit=1G
