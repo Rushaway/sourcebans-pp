@@ -2421,11 +2421,11 @@
         },
         {
             "name": "phpstan/phpstan",
-            "version": "2.2.8",
+            "version": "2.2.12",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/e285254e60f33c21902efef4a926ca0987c06804",
-                "reference": "e285254e60f33c21902efef4a926ca0987c06804",
+                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/174b0d88710f00a42598886504dd7a146f91ace5",
+                "reference": "174b0d88710f00a42598886504dd7a146f91ace5",
                 "shasum": ""
             },
             "require": {
@@ -2481,7 +2481,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2026-08-04T22:21:45+00:00"
+            "time": "2026-08-31T19:09:43+00:00"
         },
         {
             "name": "phpstan/phpstan-deprecation-rules",
@@ -4167,16 +4167,16 @@
         },
         {
             "name": "staabm/phpstan-dba",
-            "version": "0.4.9",
+            "version": "0.4.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/staabm/phpstan-dba.git",
-                "reference": "78c763fe4fd60cf0f59bad5930669c7d797b8acb"
+                "reference": "72f7bed7f09c1122dfbbe09e28d291d31960d924"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/staabm/phpstan-dba/zipball/78c763fe4fd60cf0f59bad5930669c7d797b8acb",
-                "reference": "78c763fe4fd60cf0f59bad5930669c7d797b8acb",
+                "url": "https://api.github.com/repos/staabm/phpstan-dba/zipball/72f7bed7f09c1122dfbbe09e28d291d31960d924",
+                "reference": "72f7bed7f09c1122dfbbe09e28d291d31960d924",
                 "shasum": ""
             },
             "require": {
@@ -4234,7 +4234,7 @@
             ],
             "support": {
                 "issues": "https://github.com/staabm/phpstan-dba/issues",
-                "source": "https://github.com/staabm/phpstan-dba/tree/0.4.9"
+                "source": "https://github.com/staabm/phpstan-dba/tree/0.4.10"
             },
             "funding": [
                 {
@@ -4242,7 +4242,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2026-07-16T06:48:25+00:00"
+            "time": "2026-07-29T14:59:23+00:00"
         },
         {
             "name": "staabm/side-effects-detector",
