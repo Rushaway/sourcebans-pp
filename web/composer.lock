@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "dab8fab477460725e85d46ec584d5a81",
+    "content-hash": "b9502024be432b742b15244200d0348b",
     "packages": [
         {
             "name": "dflydev/dot-access-data",
@@ -1956,16 +1956,16 @@
     "packages-dev": [
         {
             "name": "composer/semver",
-            "version": "3.5.1",
+            "version": "3.6.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/semver.git",
-                "reference": "528948210cc46f967a4b98e83b19e76f2b504993"
+                "reference": "d92543b7ede9c4ec6b59853cefb061e39866d2cf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/semver/zipball/528948210cc46f967a4b98e83b19e76f2b504993",
-                "reference": "528948210cc46f967a4b98e83b19e76f2b504993",
+                "url": "https://api.github.com/repos/composer/semver/zipball/d92543b7ede9c4ec6b59853cefb061e39866d2cf",
+                "reference": "d92543b7ede9c4ec6b59853cefb061e39866d2cf",
                 "shasum": ""
             },
             "require": {
@@ -2017,7 +2017,7 @@
             "support": {
                 "irc": "ircs://irc.libera.chat:6697/composer",
                 "issues": "https://github.com/composer/semver/issues",
-                "source": "https://github.com/composer/semver/tree/3.5.1"
+                "source": "https://github.com/composer/semver/tree/3.6.0"
             },
             "funding": [
                 {
@@ -2029,7 +2029,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2026-10-05T13:12:12+00:00"
+            "time": "2026-10-29T09:13:34+00:00"
         },
         {
             "name": "myclabs/deep-copy",
@@ -2268,11 +2268,11 @@
         },
         {
             "name": "phpstan/phpstan",
-            "version": "2.3.5",
+            "version": "2.3.6",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/645a1bd6bead15fc1b8474137467961d0fa30a79",
-                "reference": "645a1bd6bead15fc1b8474137467961d0fa30a79",
+                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/00cedebb76cc82c1592414fa4f616cefdccda16f",
+                "reference": "00cedebb76cc82c1592414fa4f616cefdccda16f",
                 "shasum": ""
             },
             "require": {
@@ -2328,7 +2328,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2026-11-03T12:14:22+00:00"
+            "time": "2026-11-15T19:58:26+00:00"
         },
         {
             "name": "phpstan/phpstan-deprecation-rules",
@@ -3964,23 +3964,23 @@
         },
         {
             "name": "staabm/phpstan-dba",
-            "version": "0.4.13",
+            "version": "0.5.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/staabm/phpstan-dba.git",
-                "reference": "176214987b50081477775a82ecf3e5e9d889951e"
+                "reference": "3d0cbf5807d17341e0748f235d04234ebd99c39d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/staabm/phpstan-dba/zipball/176214987b50081477775a82ecf3e5e9d889951e",
-                "reference": "176214987b50081477775a82ecf3e5e9d889951e",
+                "url": "https://api.github.com/repos/staabm/phpstan-dba/zipball/3d0cbf5807d17341e0748f235d04234ebd99c39d",
+                "reference": "3d0cbf5807d17341e0748f235d04234ebd99c39d",
                 "shasum": ""
             },
             "require": {
                 "composer-runtime-api": "^2.0",
                 "composer/semver": "^3.2",
                 "php": "^7.4 || ^8.0",
-                "phpstan/phpstan": "^2.1.2"
+                "phpstan/phpstan": "^2.3.0"
             },
             "conflict": {
                 "doctrine/dbal": "<3||>=5",
@@ -4032,7 +4032,7 @@
             ],
             "support": {
                 "issues": "https://github.com/staabm/phpstan-dba/issues",
-                "source": "https://github.com/staabm/phpstan-dba/tree/0.4.13"
+                "source": "https://github.com/staabm/phpstan-dba/tree/0.5.4"
             },
             "funding": [
                 {
@@ -4040,7 +4040,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2026-09-29T12:25:35+00:00"
+            "time": "2026-11-06T10:42:33+00:00"
         },
         {
             "name": "staabm/side-effects-detector",
